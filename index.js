@@ -10,7 +10,9 @@ app.get('/home', (req, res) => {
   res.send('hello Home');
 });
 
-const x= "hello world";
+const x= "hello world"
+
+x = 100
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
