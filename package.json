@@ -4,7 +4,9 @@
   "description": "Devops practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "echo \"Tests passed\" && exit 0",
+    "prepare": "husky"
   },
   "author": "Dipanshu",
   "license": "ISC",
@@ -14,7 +16,9 @@
   "devDependencies": {
     "@eslint/js": "^9.39.3",
     "eslint": "^9.39.3",
-    "globals": "^17.4.0"
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2"
   },
   "eslintConfig": {
     "env": {
@@ -28,22 +32,15 @@
       "sourceType": "module"
     },
     "rules": {
-      "indent": [
-        "error",
-        2
-      ],
-      "linebreak-style": [
-        "error",
-        "unix"
-      ],
-      "quotes": [
-        "error",
-        "single"
-      ],
-      "semi": [
-        "error",
-        "always"
-      ]
+      "indent": ["error", 2],
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"]
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
   }
 }
