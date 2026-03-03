@@ -1,0 +1,14 @@
+{
+  "name": "yourkapda",
+  "version": "1.0.0",
+  "description": "Devops practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dipanshu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
