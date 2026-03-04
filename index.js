@@ -3,16 +3,13 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('hello world');
+  res.send('hello world hiii');
 });
 
 app.get('/home', (req, res) => {
-  res.send('hello Home');
+  res.send('hello Home by4');
 });
 
-const x= "hello world"
-
-x = 100
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
