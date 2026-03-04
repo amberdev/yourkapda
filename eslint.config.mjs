@@ -9,12 +9,18 @@ export default [
         module: "readonly",
         process: "readonly",
         __dirname: "readonly",
-        console: "readonly"
+        console: "readonly",
       }
     },
     rules: {
-      "no-unused-vars": "warn",
-      "no-undef": "error"
+      "no-unused-vars": "error",
+      "no-undef": "error",
+      "no-redeclare": "error",
+      "no-const-assign": "error",
+      "no-var": "error",
+      "prefer-const": "error",
+      "no-console": "warn",
+      "no-debugger": "warn"
     }
   }
 ];
