@@ -10,6 +10,10 @@ app.get('/home', (req, res) => {
   res.send('hello Home by4');
 });
 
+app.get('/new', (req, res) => {
+  res.send('New item list');
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
