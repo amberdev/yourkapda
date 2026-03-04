@@ -9,7 +9,6 @@ on:
       - test_pipeline
 
 jobs:
-
   code-quality:
     runs-on: ubuntu-latest
     steps:
