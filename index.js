@@ -11,14 +11,14 @@ app.get('/home', (req, res) => {
 });
 
 app.get('/new', (req, res) => {
-res.send('New item list');
+  res.send('New item list');
 });
 
 app.get('/newone', (req, res) => {
-res.send('New item list');
+  res.send('New item list');
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+console.log(`Server running on port ${PORT}`);
 });
